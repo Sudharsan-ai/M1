@@ -98,14 +98,14 @@ Write a program to find minimum between two fraction numbers using conditional o
 #include <stdio.h>
 
 int main() {
-    int num1, den1, num2, den2;
+    float num1, den1, num2, den2;
     float frac1, frac2, min;
-    printf("Enter numerator and denominator of first fraction: ");
-    scanf("%d %d", &num1, &den1);
-    printf("Enter numerator and denominator of second fraction: ");
-    scanf("%d %d", &num2, &den2);
-    frac1 = (float)num1 / den1;
-    frac2 = (float)num2 / den2;
+    printf("Enter numerator and denominator of first fraction: \n");
+    scanf("%f %f", &num1, &den1);
+    printf("Enter numerator and denominator of second fraction: \n");
+    scanf("%f %f", &num2, &den2);
+    frac1 = num1 / den1;
+    frac2 = num2 / den2;
 
     min = (frac1 < frac2) ? frac1 : frac2;
 
@@ -114,9 +114,11 @@ int main() {
     return 0;
 }
 
+
 ```
 ## OUTPUT:
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/5049098f-a5d9-44b2-a456-6efa0b1e8024)
+
 
 ## RESULT:
 Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
@@ -184,11 +186,11 @@ To write a C program that reads marks of three subjects, calculates the total an
 #include <stdio.h>
 
 int main() {
-    int m1, m2, m3;        
+    float m1, m2, m3;        
     float tot, per; 
 
     printf("Enter marks of three subjects:\n");
-    scanf("%d %d %d", &m1, &m2, &m3);
+    scanf("%f %f %f", &m1, &m2, &m3);
 
     tot = m1 + m2 + m3;
 
@@ -216,7 +218,8 @@ int main() {
 }
 ```
 ## OUTPUT:
-![alt text](image-4.png)
+![image](https://github.com/user-attachments/assets/65fa84af-2902-4e98-b09c-b533bde1e4bf)
+
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
 
